@@ -134,7 +134,7 @@ function App() {
 
 
         {/* <Weathercard City={inputName} /> */}
-        <form   >
+        <form onSubmit={searchLocation}  >
           <div className="mb-5  p-2">
             <div className="relative mb-4 flex w-full flex-wrap items-stretch drop-shadow-lg">
               <input
@@ -151,7 +151,7 @@ function App() {
                 className="relative z-[2] rounded-r border-2  bg-cyan-400 text-white font-bold border-cyan-500 border-opacity-50 border-primary px-6 py-2 text-xs uppercase text-primary transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-20 focus:outline-none focus:ring-0"
                 type="submit"
                 id="button-addon3"
-                onSubmit={searchLocation}
+                onClick={searchLocation}
                 data-te-ripple-init>
                 Search
               </button>
