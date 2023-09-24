@@ -134,7 +134,7 @@ function App() {
 
 
         {/* <Weathercard City={inputName} /> */}
-        <form  onSubmit={searchLocation} >
+        <form  >
           <div className="mb-5  p-2">
             <div className="relative mb-4 flex w-full flex-wrap items-stretch drop-shadow-lg">
               <input
