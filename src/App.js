@@ -41,7 +41,7 @@ function App() {
 
 
   useEffect(() => {
-    const finalURL = `http://api.weatherapi.com/v1/current.json?key=3f27834ec3e54e22b6e123910232108&q=${inputName}&aqi=yes`
+    const finalURL = `https://api.weatherapi.com/v1/current.json?key=3f27834ec3e54e22b6e123910232108&q=${inputName}&aqi=yes`
     axios.get(finalURL).
       then((response) => {
         setWeather(response.data.location.region);
