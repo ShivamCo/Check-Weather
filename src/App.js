@@ -67,12 +67,13 @@ function App() {
 
 
 
-  return (
+  return (<div>
+    <nav className="h-14 w-full drop-shadow-md bg-orange-50 justify-items-center items-center grid ">
+    <img className="h-10  decoration-cyan-300 " src={require("./wLogo.png")} />
+  </nav>
     <div className=" grid justify-center " >
       <div className=" text-center grid place-content-center ">
-        <nav className="h-14 w-full drop-shadow-md bg-orange-50 justify-items-center items-center grid ">
-          <img className="h-10  decoration-cyan-300 " src={require("./wLogo.png")} />
-        </nav>
+        
         <h1 className="font-bold text-2xl sm:text-4xl text-cyan-400 m-5 h-auto drop-shadow-sm ">Todays Weather</h1>
 
         <div className=" ml-3 mr-3 grid grid-cols-3 gap-x-2 gap-y-2 bg-cyan-400  p-5 rounded-lg text-center border-cyan-500 drop-shadow-md border-opacity-60 border-2 " >
@@ -133,7 +134,7 @@ function App() {
 
 
         {/* <Weathercard City={inputName} /> */}
-        <form>
+        <form  onSubmit={searchLocation} >
           <div className="mb-5  p-2">
             <div className="relative mb-4 flex w-full flex-wrap items-stretch drop-shadow-lg">
               <input
@@ -150,7 +151,7 @@ function App() {
                 className="relative z-[2] rounded-r border-2  bg-cyan-400 text-white font-bold border-cyan-500 border-opacity-50 border-primary px-6 py-2 text-xs uppercase text-primary transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-20 focus:outline-none focus:ring-0"
                 type="button"
                 id="button-addon3"
-                onClick={searchLocation}
+                
                 data-te-ripple-init>
                 Search
               </button>
@@ -171,8 +172,9 @@ function App() {
 
           <img className="h-10 ml-5" src="https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png" />
         </div>
-        <p className=" text-white " >GitHub:</p>
+        <p className=" text-white " >GitHub: https://github.com/ShivamCo/Check-Weather</p>
       </footer>
+    </div>
     </div>
   )
 
