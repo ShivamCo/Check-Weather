@@ -144,15 +144,15 @@ function App() {
                 aria-label="Search"
                 value={searchInput}
                 onChange={getInput}
-                aria-describedby="button-addon3" />
+                />
 
 
               <button
                 className="relative z-[2] rounded-r border-2  bg-cyan-400 text-white font-bold border-cyan-500 border-opacity-50 border-primary px-6 py-2 text-xs uppercase text-primary transition duration-150 ease-in-out hover:bg-black hover:bg-opacity-20 focus:outline-none focus:ring-0"
                 type="submit"
                 id="button-addon3"
-                
-                data-te-ripple-init>
+                onClick={searchLocation}
+                >
                 Search
               </button>
             </div>
