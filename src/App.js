@@ -63,7 +63,7 @@ function App() {
       })
 
 
-  }, [weather])
+  }, [inputName])
 
 
 
